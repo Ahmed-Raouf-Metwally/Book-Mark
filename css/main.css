@@ -1,0 +1,75 @@
+body{
+    background-color: #e2e4ff42;
+}
+textarea {
+    resize: none;
+}
+
+.main {
+    padding-top: 10px;
+    background-image: url(../imgs/antonio-dicaterina-vDaOJVL5FL8-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.btn-add {
+    background-color: #2c2891;
+    color: white;
+    text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+    transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+    border: 1px solid #2C2891;
+}
+
+.btn-add:hover {
+    background-color: white;
+    text-shadow: 0 0 2px #2C2891, 0 0 2px #2C2891;
+    color: #2C2891;
+    border: 1px solid #2C2891;
+}
+
+.color {
+    color: #a30202ab;
+    text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+}
+
+.form-head {
+    font-size: 42px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+    margin-bottom: 50px;
+}
+
+.upBtn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+}
+
+.downBtn {
+    transform: translatey(-50%);
+    -webkit-transform: translatey(-50%);
+    -moz-transform: translatey(-50%);
+    -ms-transform: translatey(-50%);
+    -o-transform: translatey(-50%);
+}
+
+.to-down-arrow, .to-top-arrow {
+    background: #E6A505;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+table{
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
