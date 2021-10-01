@@ -115,9 +115,11 @@ function updateProduct(index) {
 
 function checkName() {
     if (nameRegx.test(bookMarktNameInput.value)) {
+        validFlag1 = true;
         return true;
     }
     else {
+        validFlag1 = false;
         return false;
     }
 }
@@ -133,14 +135,11 @@ bookMarktNameInput.onkeyup = function () {
     if (checkName() == true) {
         nameAlertAccepted.classList.remove("d-none");
         nameAlert.classList.add("d-none")
-        validFlag1 = true;
     } else if (checkName() == false) {
         nameAlertAccepted.classList.add("d-none");
         nameAlert.classList.remove("d-none");
-        validFlag1 = false;
     }
     if (isEmpty() == true) {
-        nameAlert.classList.add("d-none");
         allInputsAlert.classList.remove("d-none")
     } else {
         allInputsAlert.classList.add("d-none")
@@ -151,9 +150,12 @@ bookMarktNameInput.onkeyup = function () {
 
 function checkUrl() {
     if (urlRegx.test(bookMarkUrlInput.value)) {
+        validFlag2 = true;
+
         return true;
     }
     else {
+        validFlag2 = false;
         return false;
     }
 }
@@ -162,14 +164,11 @@ bookMarkUrlInput.onkeyup = function () {
     if (checkUrl() == true) {
         urlAlertAccepted.classList.remove("d-none");
         urlAlert.classList.add("d-none")
-        validFlag2 = true;
     } else if (checkUrl() == false) {
         urlAlertAccepted.classList.add("d-none");
-        urlAlert.classList.remove("d-none");
-        validFlag2 = false;
+        urlAlert.classList.remove("d-none");    
     }
     if (isEmpty() == true) {
-        urlAlert.classList.add("d-none");
         allInputsAlert.classList.remove("d-none")
     } else {
         allInputsAlert.classList.add("d-none")
