@@ -24,18 +24,19 @@
 
     <div class="main">
         <div id="main" class="container">
-            <div class="form-head text-center pt-3">
-                <h1 class="d-flex justify-content-center fw-bold">Bookmarker</h1>
-                <h2 class="d-flex justify-content-center">Bookmark your favorite sites</h2>
+            <div class="row">
+                <div class="form-head text-center pt-3 col-md-12">
+                    <h1 class="d-flex justify-content-center fw-bold">Bookmarker</h1>
+                    <h2 class="d-flex justify-content-center">Bookmark your favorite sites</h2>
+                </div>
             </div>
-            <div class="">
+            <div class="row">
                 <div class="d-flex justify-content-center align-items-center flex-column"
                     style="background-color: #fffd9528;border-radius: 15px;">
 
-                    <div class="pt-2 w-75 ">
-                        <label class="fw-bold w-100 d-flex justify-content-center align-items-center pt-1 color"
-                            for="siteName"><i class="far fa-bookmark fa-2x pe-2"></i>Site
-                            Name</label>
+                    <div class="pt-1 w-75 ">
+                        <h5 class="fw-bold w-100 d-flex justify-content-center align-items-center pt-1 color"
+                            for="siteName"><i class="far fa-bookmark  pe-2"></i>Site Name</h5>
                         <span class="text-danger"> * </span>
 
                         <input class="form-control my-2" id="siteName" placeholder="Bookmark Name" type="text" required>
@@ -46,10 +47,9 @@
                             Bookmark Name Accepted
                         </div>
                     </div>
-                    <div class="pt-2 w-75">
-                        <label class="fw-bold w-100 d-flex justify-content-center align-items-center pt-1 color"
-                            for="siteUrl"><i class="fas fa-link fa-2x pe-2"></i> Site
-                            URL</label>
+                    <div class="pt-1 w-75">
+                        <h5 class="fw-bold w-100 d-flex justify-content-center align-items-center  color"
+                            for="siteUrl"><i class="fas fa-link pe-2"></i> Site URL</h5>
                         <span class="text-danger"> * </span>
                         <input class="form-control my-2 " id="siteUrl" placeholder="website URL" type="text" required>
                         <div id="urlAlert" class="alert alert-danger d-none" role="alert">
@@ -60,13 +60,11 @@
                         </div>
                     </div>
                     <p id="allInputsAlert" class="text-danger d-none">Please fill in required data !</p>
-                    <button id="btnAdd" disabled class="btn btn-add m-3">submit <i
+                    <button id="btnAdd" disabled class="btn btn-add mb-1">submit <i
                             class="fas fa-plus ps-2"></i></button>
                 </div>
             </div>
-
         </div>
-
     </div>
     <div class="downBtn d-flex justify-content-center align-items-center">
         <div class="to-down-arrow d-flex justify-content-center align-items-center">
@@ -83,8 +81,8 @@
                 class="form-control w-75 m-auto my-5">
         </div>
 
-        <div>
-            <div>
+        <div class="container">
+            <div class="Table">
                 <table class="table table-responsive table-hover ">
                     <thead class="table-dark">
                         <th>

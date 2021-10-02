@@ -73,3 +73,14 @@ table{
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
 }
+
+@media only screen and (max-width: 768px) {
+    .main {
+        height: 100%;
+        padding-bottom: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .Table{
+        overflow-x:auto }
+}
