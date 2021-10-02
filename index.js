@@ -33,6 +33,7 @@ btnAddButton.onclick = function addSite() {
             localStorage.setItem("bookMarksList", JSON.stringify(bookMarksContainer));
             displayData();
             clearForm();
+            btnAddButton.disabled = "true";
             allInputsAlert.classList.add("d-none")
             nameAlertAccepted.classList.add("d-none")
             urlAlertAccepted.classList.add("d-none")
@@ -41,6 +42,10 @@ btnAddButton.onclick = function addSite() {
             updateData(indexUpdate);
             clearForm();
             document.getElementById("btnAdd").innerHTML = `submit <i class="fas fa-plus ps-2"></i>`
+            btnAddButton.disabled = "true";
+            allInputsAlert.classList.add("d-none")
+            nameAlertAccepted.classList.add("d-none")
+            urlAlertAccepted.classList.add("d-none")
         }
     }
 }
